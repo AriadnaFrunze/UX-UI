@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    background-color: #333;
+    font-family: 'Raleway', sans-serif;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.navbar {
+    background-color: #222;
+    font-size: 20px;
+}
+.navbar>ul {
+    display: inline-block;
+    vertical-align: middle;
+}
+.navbar>ul>li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px 10px;
+}
+.navbar>ul.branding {
+    margin-left: 50px;
+    margin-right: 100px;
+    
+}
+.navbar>ul.branding li:first-child{
+    font-size: 30px;
+}
+.navbar>ul.client {
+    margin-left: 150px;
+}
