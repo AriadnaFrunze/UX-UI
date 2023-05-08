@@ -28,7 +28,7 @@ body {
     overflow: hidden;
     display: none;
 }
-.contacts span.outcome:target .outcome>div {
+.contacts span.outcome:target .options>div {
     width: 100%;
     display: inline;
   
