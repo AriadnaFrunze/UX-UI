@@ -18,20 +18,27 @@ body {
     vertical-align: middle;
     transition: 1.0s;
 }
-/* hereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
+span#result {
+    display: inline-block;
+}
+span.options {
+    display: inline-block;
+}
 .contacts .options a>i {
     color: #ddd;
-    padding:0 .3em;
+    padding:0.3em;
 }
-.contacts .outcome>div {
+.contacts .outcome > div {
     width: 0;
-    overflow: hidden;
-    display: none;
+    transition: 1.5s;
+    overflow: hidden;  
 }
-.contacts span.outcome:target .options>div {
+.contacts span#result:target .outcome > div {
     width: 100%;
-    display: inline;
-  
+}
+.contacts span#result:target > * {
+    transform: translateX(7em);
+    transition: 0.5s;
 }
 .contacts .avatar {
     margin: 0;
@@ -68,7 +75,6 @@ body {
     background-color: #151515;
     color: white;
 }
-/* hereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
 .contacts .add-details > div {
     width: 0;
     transition: 1.5s;
@@ -90,3 +96,4 @@ body {
     border: 1px solid green;
     background-color: lightgreen;
 }
+
