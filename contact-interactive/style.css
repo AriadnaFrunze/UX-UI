@@ -1,0 +1,92 @@
+body {
+   background-color: #222; 
+   color: white;
+   margin: 0;
+   font-family: sans-serif;
+}
+.contacts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.contacts li {
+    display: table;
+    padding: .25em;
+}
+.contacts li > * {
+    display: table-cell;
+    vertical-align: middle;
+    transition: 1.0s;
+}
+/* hereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
+.contacts .options a>i {
+    color: #ddd;
+    padding:0 .3em;
+}
+.contacts .outcome>div {
+    width: 0;
+    overflow: hidden;
+    display: none;
+}
+.contacts li:target .outcome>div {
+    width: 100%;
+    display: inline;
+  
+}
+.contacts .avatar {
+    margin: 0;
+    padding-right: 1em;
+}
+.contacts .avatar img {
+    height: 3em;
+}
+.contacts .avatar .status {
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    border-radius: 0.4em;
+    margin-left: -1em;
+}
+.contacts .info > span {
+    display: table-row;
+}
+.contacts .action {
+    padding:0 3em;
+}
+.contacts .action a.add {
+    text-decoration: none;
+    background-color: #111;
+    color: #ddd;
+    display: block;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 2em;
+} 
+.contacts .action a.add:hover {
+    background-color: #151515;
+    color: white;
+}
+/* hereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
+.contacts .add-details > div {
+    width: 0;
+    transition: 1.5s;
+    overflow: hidden;
+
+}
+.contacts li:target .add-details > div {
+    width: 100%;
+}
+.contacts li:target > * {
+    transform: translateX(-14em);
+    transition: 0.5s;
+}
+.status.off {
+    border: 1px solid #777;
+    background-color: #444;
+}
+.status.on {
+    border: 1px solid green;
+    background-color: lightgreen;
+}
