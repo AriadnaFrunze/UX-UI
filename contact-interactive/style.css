@@ -18,26 +18,28 @@ body {
     vertical-align: middle;
     transition: 1.0s;
 }
-span#result {
+span.options > a {
     display: inline-block;
-}
-span.options {
-    display: inline-block;
+    vertical-align: bottom;
 }
 .contacts .options a>i {
     color: #ddd;
     padding:0.3em;
+    line-height: 3em; 
+}
+.contacts .outcome a {
+    display: block;
+    transform: translateY(-1em);
 }
 .contacts .outcome > div {
-    width: 0;
-    transition: 1.5s;
-    overflow: hidden;  
+    display: none;
+    transition: 1.0s;
 }
 .contacts span#result:target .outcome > div {
-    width: 100%;
+    display: table-cell;
 }
 .contacts span#result:target > * {
-    transform: translateX(7em);
+    transform: translateX(14em);
     transition: 0.5s;
 }
 .contacts .avatar {
@@ -76,13 +78,11 @@ span.options {
     color: white;
 }
 .contacts .add-details > div {
-    width: 0;
-    transition: 1.5s;
-    overflow: hidden;
-
+    display: none;
+    transition: 1.0s;
 }
 .contacts li:target .add-details > div {
-    width: 100%;
+    display: table-cell;
 }
 .contacts li:target > * {
     transform: translateX(-14em);
@@ -96,4 +96,3 @@ span.options {
     border: 1px solid green;
     background-color: lightgreen;
 }
-
