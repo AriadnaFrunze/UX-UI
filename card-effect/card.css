@@ -1,0 +1,71 @@
+body {
+    font-family: Arial;
+}
+header,section,footer {
+    border: 1px dotted #999;
+    padding: 10px;
+    margin: 10px;
+}
+article {
+    vertical-align: top;
+}
+
+/* Card Styles */
+.card-employee {
+    border: 1px solid #BBB ;
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px -1px #666;
+    text-align: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.card-employee:hover {
+    box-shadow: 2px 2px 5px -1px #666;
+    transform: translateY(-1px) translateX(-1px);
+
+}
+.card-employee h1 {
+    font-size: 25px;
+    margin: 0;
+}
+.card-employee img {
+    transform: translateY(-15px);
+}
+.card-employee p {
+    margin: 0;
+}
+.card-employee ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.card-employee .collapse {
+    height: 0;
+    overflow: hidden;
+    transition: .7s;
+}
+.card-employee:target .collapse {
+    height: 160px;
+}
+.card-employee h2 {
+    margin-bottom: 0;
+}
+.card-employee .expand {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    border: 3px solid blue;
+    color: blue;
+    margin-top: 10px;
+    padding: 0 8px;
+    border-radius: 100%;
+}
+.card-employee .expand.m {
+    padding: 0 12px;
+}
+.card-employee:target .expand:not(.m) {
+    display: none;
+}
