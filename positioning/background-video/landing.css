@@ -1,0 +1,38 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+}
+#overlay {
+    height: 50%;
+    width: 50%;
+    padding: 25%;
+    background-color: #4448;
+    background-image: linear-gradient(black 20%, #0004 20%),
+                      linear-gradient(#0004 80%, black 80%);
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+form>button {
+    padding: 5px 20px;
+    margin: 7px;
+    border: none;
+    border-radius: 15px;
+    font-family: Arial;
+    cursor: pointer;
+    background-color: #777;
+}
+form>button:hover {
+     background-color: #eee;
+     box-shadow: 0 0 2px 5px black;
+}
+#background {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
