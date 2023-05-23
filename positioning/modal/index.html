@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modal Window | CSS Positioning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- <main> represent the dominant content of a document -->
+   <main id="content">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos aut similique ullam.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum totam voluptate dolore commodi alias rem, omnis ut fuga et ullam accusantium autem sed magni explicabo quisquam. Iusto enim ipsa corrupti ut. Labore maxime facilis illum asperiores odit eum id quas!</p>
+        <p>Et nesciunt id ex necessitatibus voluptas modi quisquam ipsum nihil corrupti recusandae, at accusamus explicabo dolor molestias facere amet aut? Rem accusantium omnis perferendis accusamus nam atque blanditiis tempora eius aperiam? Nostrum quos deleniti, veniam commodi laborum vero in. Quam.</p>
+        <p>Est, assumenda. Ipsum perferendis quis, aliquid maxime quaerat atque officiis fuga maiores, accusantium voluptatem modi accusamus debitis expedita vel perspiciatis ex iste obcaecati odit, placeat assumenda eum ut? Et debitis nobis iure veniam numquam culpa sunt ipsam quaerat, tempore architecto?</p>
+        <p class="ad">
+            To benefit from it, HIT
+            <a href="#modal"> THIS BUTTON</a>
+        </p>
+    </main>
+
+    <div id="modal">
+        <!-- It is correct to use h1 in this <div> because this element behaves like a separate page -->
+        <h1>Apply for this product</h1>
+        <h2>In order to apply, fill this blank</h2>
+        <form action="#">
+            <label for="#name">Your Name</label>
+            <input type="text" placeholder="e.g : Kate Evans" id="name" required><br>
+            <label for="#number">Your number</label>
+            <select name="" id="">
+                <option value="">+373</option>
+                <option value="">+785</option>
+                <option value="">+483</option>
+                <option value="">+916</option>
+            </select>
+            <input type="text" placeholder="e.g: 0123456789" id="number" required><br>
+            <label for="#email">Your Email</label>
+            <input type="text"placeholder="e.g: kate_evans@example.com" id="email"><br>
+            <button>Apply</button>
+        </form>
+        <a href="#">X</a>
+    </div>
+
+    <div class="overlay"></div>
+    
+</body>
+</html>

@@ -1,0 +1,93 @@
+body {
+    font-family: Arial;
+    background-color: #223;
+    color: white;
+}
+#content {
+    width: 90%;
+    margin: 10% auto;
+}
+#content {
+    text-align: justify;
+}
+#content .ad {
+    font-size: 150%;
+    margin: 5em 0;
+    text-align: right;
+
+}
+#content .ad a {
+    background-color: orange;
+    padding: 1%;
+    text-decoration: none;
+    margin-left: 2%;
+}
+#content .ad a:hover {
+    animation: color 2s infinite;
+}
+/* MODAL */
+#modal {
+    background-color: #678;
+    padding: 3em;
+    display: none;
+    position: fixed;
+    top: 30%;
+    right: 20%;
+    left: 20%;
+    z-index: 2;
+}
+#modal:target {
+    display: block;
+}
+#modal input {
+    padding: 1em;
+    width: 30em;
+}
+#modal button {
+    padding: 3%;
+    width: 86.5%;
+}
+#modal button:hover {
+    background-color: lightgreen;
+    box-shadow: 0 0 1px 1px black;
+}
+#modal a {
+    color: white;
+    text-decoration: none;
+    font-style: 200%;
+    position: absolute;
+    right: 4%;
+    top: 2%;
+}
+#modal a:hover{
+    color: red;
+}
+#modal:target+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #000A;
+}
+@keyframes color {
+    from{ 
+        background-color: orange;
+    }
+    20%{
+        background-color: rgb(117, 79, 9);
+    }
+    40%{
+        background-color: rgb(91, 71, 35);
+    }
+    60%{
+        background-color: rgb(134, 102, 42);
+    }
+    80%{
+        background-color: rgb(186, 137, 46);
+    }
+    to{
+        background-color: orange;
+    }
+}
