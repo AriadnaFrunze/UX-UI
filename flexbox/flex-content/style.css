@@ -13,8 +13,9 @@ figure {
     margin: 10% auto;
 }
 .news header {
-    border-top: 2px solid #aaa;
-    border-bottom: 2px solid #aaa;
+    --border: 2px solid #aaa;
+    border-top: var(--border);
+    border-bottom: var(--border);
     margin-bottom: 3%;
 }
 .news header h1 {
