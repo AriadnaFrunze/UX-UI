@@ -1,0 +1,32 @@
+body {
+  background-color: #424e37;
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+figure img {
+  border: 5px solid #819d5f;
+  box-shadow: 0 0 2px 3px #677d4c;
+}
+figure img:hover {
+  box-shadow: 0 0 3px 4px #677d4c;
+  border-color: #b3c49e;
+}
+figure figcaption {
+  text-align: center;
+  font-family: Arial;
+}
+figure figcaption h2 {
+  margin-bottom: 0;
+  color: #b3c49e;
+}
+figure figcaption h3 {
+  margin-top: 1vh;
+  color: #677d4c;
+}/*# sourceMappingURL=style.css.map */
