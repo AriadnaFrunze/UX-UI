@@ -1,0 +1,78 @@
+$color-dark : #333;
+$color-light : orange;
+$sizeW : 800px;
+$sizeH : 600px;
+$thickness : 5px;
+@mixin reset {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: $color-dark;
+    @include reset;
+}
+.carousel {
+    width: $sizeW;
+    height: $sizeH;
+    border: $thickness solid lighten($color-dark, 10%);
+    .slide {
+        &:nth-child(1) {
+            >div {
+                background-image: url(slide1.jpg);
+            }
+        }
+        &:nth-child(2) {
+            >div {
+                background-image: url(slide2.jpg);
+            }
+        }
+        border: 1px solid $color-light;
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        @for $child from 1 through 2 {
+            &:nth-child(#{$child})
+        
+            > div {
+                box-sizing: border-box;
+                width: $sizeW / 8;
+                height: $sizeH / 6;
+                // border: 1px solid red;
+                float: left;
+                color: white;
+                @for $y from 0 through 5{
+                    @for $x from 0 through 7 {
+                        &:nth-child(#{$x + 1 + $y * 8}) {
+                            background-position-x: $x * - $sizeW / 8;
+                            background-position-y: $y * - $sizeH / 6;
+                            // opacity: 0;
+                            // animation: effect1 5s 1;
+                            // animation-fill-mode: forwards;
+                            // animation-delay: 0.4s * random($limit: 10);
+                            // animation-delay: 0.4s * ($y + $x);
+                            // animation-delay: 0.4s * $x;
+                            // animation-delay: 0.4s * $y;
+
+                            transform: translateX(-$sizeW) translateY(-$sizeH) rotate(0);
+                            animation: effect2 0.25s * random(5) 1;
+                            animation-fill-mode: forwards;
+                            animation-delay: 0.4s * random($limit: 10)+($child - 1 ) * 5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes effect1 {
+   from{opacity: 0;}
+   to{opacity: 1;} 
+}
+@keyframes effect2 {
+   from{
+    transform: translateX(-$sizeW) translateY(-$sizeH) rotate(-1800deg);
+   }
+   to{
+    transform: translateX(0) translateY(0);
+   } 
+}
