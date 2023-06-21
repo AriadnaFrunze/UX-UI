@@ -1,0 +1,7 @@
+.splide {
+    width: 600px;
+    height: 90vh;
+}
+.splide .splide__track{
+    text-align: center;
+}
